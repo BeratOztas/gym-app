@@ -46,7 +46,7 @@ services:
   # --- (Eureka) ---
   discovery-service:
     build:
-      context: ../discovery-service
+      context: ./discovery-service
     container_name: discovery-service
     ports:
       - "8761:8761"
@@ -59,7 +59,7 @@ services:
   # gym-crm (Producer) 
   gym-crm:
     build:
-      context: ../gym-crm
+      context: ./gym-crm
     container_name: gym-crm
     depends_on:
       - postgres
@@ -77,7 +77,7 @@ services:
   # trainer-hours-service (Consumer) 
   trainer-hours-service:
     build:
-      context: ../trainer-hours-service
+      context: ./trainer-hours-service
     container_name: trainer-hours-service
     depends_on:
       - kafka
