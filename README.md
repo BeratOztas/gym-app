@@ -15,20 +15,29 @@ The project follows a monorepo structure, with all microservices located in a si
 ## -- Getting Started
 Follow these steps to set up and run the project locally.
 
-### -- Prerequisites
-- **Java 17 or higher**: The project is built with Java 17.
-- **Maven**: Used for building the project.
-- **Docker & Docker Compose**: Required to run the services.
-
-### -- Build the Project
-Navigate to the main `gym-app` directory and build all microservice JAR files:
+### -- Clone the Repository
+To clone the main repository **with all submodules**, use the following command:
 
 ```bash
+git clone --recurse-submodules https://github.com/BeratOztas/gym-app.git
+This ensures that all microservices (discovery-service, gym-crm, trainer-hours-service, training-commons) are cloned correctly.
+
+-- Prerequisites
+Java 17 or higher: The project is built with Java 17.
+
+Maven: Used for building the project.
+
+Docker & Docker Compose: Required to run the services.
+
+-- Build the Project
+Navigate to the main gym-app directory and build all microservice JAR files:
+
+bash
 mvn clean install
 -- Start the Services
 Use Docker Compose to build and start all the services:
 
-```bash 
+bash
 docker-compose up --build
 -- Local Development (IDE)
 If you prefer to work on a specific microservice in your IDE (Eclipse, VS Code, etc.), import the parent pom.xml file. Your IDE will automatically detect all modules as separate projects.
