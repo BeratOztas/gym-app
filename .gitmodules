@@ -1,3 +1,12 @@
 [submodule "discovery-service"]
 	path = discovery-service
 	url = https://github.com/BeratOztas/discovery-service.git
+[submodule "gym-crm"]
+	path = gym-crm
+	url = https://github.com/BeratOztas/gym-crm.git
+[submodule "trainer-hours-service"]
+	path = trainer-hours-service
+	url = https://github.com/BeratOztas/trainer-hours-service.git
+[submodule "training-commons"]
+	path = training-commons
+	url = https://github.com/BeratOztas/training-commons.git
